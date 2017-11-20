@@ -1,0 +1,49 @@
+ip: 'localhost'
+port: 3306
+database: 'test'
+username: 'root'
+password: ''
+
+level: 50 #nivel de xp em que é feita a conversao
+
+prefix: '§e[§l§3XP§e]§3 - '
+NoPerm: '§cVoce nao tem permissao pra isso.'
+Help:
+  - §e[§3XP§e]§3 - §eDesenvolvido por §6Faistel.
+  - §eSeu XP sera convertido em tokens ao atigir o nivel {LEVEL}.
+  - §e/xpconverter §aon §6- para ativar a conversao automatica de xp.
+  - §e/xpconverter §coff §6- para desativar a conversao automatica de xp.
+  - §e/xpconverter status §6- exibe o status atual do conversor.
+  - §e/xpconverter upgrade §6- faca upgrade para aumentar a taxa de conversao.
+Info: '§e/xpconverter help'
+onDisable: 'XP CONVERTER DESATIVADO'
+onEnable: 'XP CONVERTER ATIVADO'
+Reload: '§eReload com sucesso.'
+
+UpgradeSuccessfully: '§bVoce melhorou para o nivel §e{UP_LEVEL}§b com sucesso.'
+Not_Enought_Money: '§cVoce nao pode se dar ao luxo de pagar por isso.'
+Level_Max: '§cVoce chegou ao nivel maximo §e{MAX_LEVEL}.'
+
+
+
+Syntax_Error: 'Erro de sintaxe.'
+Player_Not_Found: 'Jogador nao encontrado.'
+Transfer_Created: 'A sua transferencia foi criada.'
+Purchase_Order: 'A sua ordem de compra foi criada.'
+Updated_Purchase_Order: 'A sua ordem de compra foi atualizada.'
+Sales_Order: 'A sua ordem de venda foi criada.'
+Updated_Sales_Order: 'A sua ordem de venda foi atualizada.'
+
+#formule to upgrade: EXPONENTIAL2: price * 2 ^ (level - 1)
+Price: 0.5
+MaxLevel: 10
+Max_success_rate: 100 # 100%
+
+Blocks:
+  - COAL_ORE
+  - DIAMOND_ORE
+  - REDSTONE_ORE
+  - LAPIS_ORE
+  - EMERALD_ORE
+  - IRON_ORE
+  - GOLD_ORE
